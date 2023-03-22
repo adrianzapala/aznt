@@ -1,5 +1,5 @@
 ![Python Version](https://img.shields.io/badge/python-3.11-blue/)
-![aznt version](https://img.shields.io/badge/aznt-0.0.38-green)
+![aznt version](https://img.shields.io/badge/aznt-0.0.41-green)
 ![Beta version](https://img.shields.io/badge/beta-ver.-green)
 
 # `aznt` - From A to Z Number Theory

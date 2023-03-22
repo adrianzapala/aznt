@@ -1,3 +1,5 @@
 .idea
 /tests
+/dist
+/aznt.egg-info
 README.txt
