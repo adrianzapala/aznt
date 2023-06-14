@@ -1,5 +1,5 @@
 ![Python Version](https://img.shields.io/badge/python-3.11-blue/)
-![aznt version](https://img.shields.io/badge/aznt-0.0.41-green)
+![aznt version](https://img.shields.io/badge/aznt-0.0.42-green)
 ![Beta version](https://img.shields.io/badge/beta-ver.-green)
 
 # `aznt` - From A to Z Number Theory
@@ -427,6 +427,16 @@ Incorrect argument
 1e+01     4                             6.165599504787298             2.165600                 54.139988                     
 1e+02     25                            30.12614158407963             5.126142                 20.504566                     
 1e+03     168                           177.60965799015221            9.609658                 5.720035
+```
+
+## `fib()`
+Return dictionary of Fibonacci numbers from `0` to `n`. Key is an index, and a value is a specific Fibonacci number. First must create `Fibonacci` class object and then call `fib()` method on it.
+Time complexity: `O(n)`.<br>
+**<span style="color: coral">Examples</span>**
+```python
+>>> fob = Fibonacci(15)
+>>> print(fob.fib())
+{0: 0, 1: 1, 2: 1, 3: 2, 4: 3, 5: 5, 6: 8, 7: 13, 8: 21, 9: 34, 10: 55, 11: 89, 12: 144, 13: 233, 14: 377, 15: 610}
 ```
 
 # Usage: `azntprimality` module functions

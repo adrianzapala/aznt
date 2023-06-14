@@ -320,4 +320,37 @@ def pstats3(data_rows=29):
 
     print(f"{headers[0]:^10}{headers[1]:^30}{headers[2]:^30}{headers[3]:^25}{headers[4]:^30}")
     for i in range(data_rows):
-        print(f"{_xs[i]:<10.0e}{pi_x[i]:<30}{float(_pnt2[i]):<30}{approx_error_absolute[i]:<25f}{approx_error_relative[i]:<30f}")
+        print(
+            f"{_xs[i]:<10.0e}{pi_x[i]:<30}{float(_pnt2[i]):<30}{approx_error_absolute[i]:<25f}{approx_error_relative[i]:<30f}")
+
+
+class Fibonacci:
+
+    def __init__(self, n):
+        self.n = n
+
+    def fib_generator(self):
+        """Helper function: generate Fibonacci sequence from 0 to n"""
+        a, b = 0, 1
+        i = 0
+        yield a
+        yield b
+        while i <= self.n - 2:
+            c = a + b
+            a = b
+            b = c
+            i += 1
+            yield c
+
+    def fib(self):
+        """Return Fibonacci sequence from 0 to n to a dictionary"""
+        dct = {}
+        for count, fb in enumerate(self.fib_generator()):
+            dct[count] = fb
+
+        return dct
+
+
+if __name__ == "__main__":
+    fob = Fibonacci(15)
+    print(fob.fib())
