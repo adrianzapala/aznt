@@ -1,6 +1,6 @@
 [project]
 name = "aznt"
-version = "0.0.42"
+version = "0.0.44"
 description = "From A to Z Number Theory"
 keywords = ["aznt", "numbers", "number theory", "primes", "prime numbers", "math"]
 authors = [
